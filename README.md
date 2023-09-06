@@ -46,16 +46,26 @@ Follow these steps to get the project up and running on your local machine:
    yarn install
    ```
 ## 3. Project Structure
-- **src/Cards**: Contains components representing specific sections or cards within your application.
-- **src/components**: Holds reusable React components used throughout your app.
-- **src/misc**: Contains miscellaneous components and utilities.
-- **src/App.js**: The main application component.
-- **src/index.js**: The entry point for rendering your React application.
-- **public/**: Contains public assets like HTML files, images, and other publicly accessible files.
-- **node_modules/**: Holds the project's dependencies.
-- **package.json**: Specifies project dependencies and scripts.
-- **README.md**: Project documentation.
-- **.gitignore**: Git ignore file to specify files and directories to exclude from version control.
+```bash
+my-react-app/
+│
+├── node_modules/ # Dependencies
+├── public/ # Public assets
+│ ├── index.html # Main HTML file
+│ ├── favicon.ico # Favicon icon
+│ └── ...
+├── src/ # Source code
+│ ├── Cards/ # Components for specific sections or cards
+│ ├── components/ # Reusable React components
+│ ├── misc/ # Miscellaneous components and utilities
+│ ├── App.js # Main application component
+│ ├── index.js # Entry point for React rendering
+│ └── ...
+├── package.json # Project configuration
+├── README.md # Project documentation
+├── .gitignore # Git ignore file
+└── ...
+```
 
 ## 4. Usage
 
