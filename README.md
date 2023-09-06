@@ -51,6 +51,7 @@ my-react-app/
 │
 ├── node_modules/ # Dependencies
 ├── public/ # Public assets
+| ├──assets/ # Static assets for the project
 │ ├── index.html # Main HTML file
 │ ├── favicon.ico # Favicon icon
 │ └── ...
