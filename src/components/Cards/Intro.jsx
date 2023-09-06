@@ -18,7 +18,7 @@ const Intro = () => {
 
     const introCardPhoto = document.getElementById("intro-card-photo");
     const tl = gsap.timeline();
-    tl.set(introCardPhoto, { opacity: 0, scale: 0 });
+    tl.set(introCardPhoto, { opacity: 0, scale: 0, x: "15%" });
     tl.to(introCardPhoto, {
       opacity: 1,
       scale: 1,

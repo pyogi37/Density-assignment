@@ -77,7 +77,7 @@ const Familiar = () => {
   return (
     <div
       className="p-4"
-      style={{ height: "60vh" }}
+      style={{ height: "70vh" }}
       name="emotions"
       id="emotions"
     >
@@ -95,12 +95,12 @@ const Familiar = () => {
           onMouseOver={horizontalScroll}
           ref={ref}
           style={{
-            height: "41vh",
+            height: "45vh",
             overflowX: "scroll",
             overflow: "hidden",
           }}
         >
-          <Box className={"p-5"}>
+          <Box className={"p-5 h-max"}>
             <EmojiCard
               emoji={128544}
               heading={"You argue with colleague"}
