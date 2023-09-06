@@ -1,6 +1,6 @@
 import React from "react";
 
-const Box = ({ flexDirection, children, className }) => {
+const Box = ({ flexDirection, children, className, id, ref }) => {
   const containerStyle = {
     display: "flex",
     flexDirection: flexDirection || "row", // Default to 'row' if no direction is provided
@@ -8,7 +8,7 @@ const Box = ({ flexDirection, children, className }) => {
   };
 
   return (
-    <div style={containerStyle} className={className}>
+    <div style={containerStyle} className={className} id={id} ref={ref}>
       {children}
     </div>
   );
