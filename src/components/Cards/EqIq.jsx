@@ -19,12 +19,16 @@ const EqIq = () => {
       const eqPara2 = document.getElementById("eq-para-2");
 
       // Set initial positions (off-screen to the left)
-      tl.set([eqHeading, eqPara1, eqPara2], { x: "-500%" });
+      tl.set([eqHeading, eqPara1, eqPara2], {
+        x: "-500%",
+        x: "500%",
+        x: "500%",
+      });
 
       // Animate each element into its actual position one by one
       tl.to(eqHeading, { x: "0%", duration: 1, ease: "power2.out" })
         .to(eqPara1, { x: "0%", duration: 1.5, ease: "power2.out" }, "-=0.5") // Start para1 animation 0.5s before eqHeading animation completes
-        .to(eqPara2, { x: "0%", duration: 1.5, ease: "power2.out" }, "-=0.5"); // Start para2 animation 0.5s before para1 animation completes
+        .to(eqPara2, { x: "0%", duration: 1.5, ease: "power2.out" }, "-=0.7"); // Start para2 animation 0.5s before para1 animation completes
     });
   }, []);
 

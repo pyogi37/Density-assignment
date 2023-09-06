@@ -18,7 +18,11 @@ const EqBest = () => {
       const selfPara2 = document.getElementById("self-para-2");
 
       // Set initial positions (off-screen to the left)
-      tl.set([selfHeading, selfPara1, selfPara2], { x: "-500%" });
+      tl.set([selfHeading, selfPara1, selfPara2], {
+        x: "-500%",
+        x: "500%",
+        x: "500%",
+      });
 
       // Animate each element into its actual position one by one
       tl.to(selfHeading, { x: "0%", duration: 1, ease: "power2.out" })
